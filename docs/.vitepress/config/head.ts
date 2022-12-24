@@ -56,7 +56,7 @@ export const head: HeadConfig[] = [
     {},
     `;(() => {
       if (window.location.href.indexOf('/docs/') === -1) {
-        window.location.href = window.location.origin + '/docs/'
+        window.location.href = window.location.origin + '/omd-design-plus/docs/'
       }
     })()`,
   ],

@@ -1,3 +1,5 @@
 export const features = {}
 
-export const doscPath = 'docs'
+export const mdRoutePath = 'docs'
+
+export const doscPath = 'omd-design-plus/docs'

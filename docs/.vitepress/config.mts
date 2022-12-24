@@ -37,6 +37,7 @@ export const config: UserConfig = {
   title: 'Omd Design Plus',
   description: 'Omd Design Plus',
   lastUpdated: true,
+  base: 'omd-design-plus',
   head,
   themeConfig: {
     repo: REPO_PATH,

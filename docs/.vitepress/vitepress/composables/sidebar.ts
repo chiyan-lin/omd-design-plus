@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { ensureStartingSlash, isArray, removeExtention } from '../utils'
-import { doscPath } from '../../config/features'
+import { mdRoutePath } from '../../config/features'
 
 export const useSidebar = () => {
   const route = useRoute()
@@ -58,7 +58,7 @@ export function getSidebarConfig(sidebar: Sidebar, path: string) {
   path = ensureStartingSlash(path)
   for (const dir in sidebar) {
     // make sure the multi sidebar key starts with slash too
-    if (path.startsWith(ensureStartingSlash(`/${doscPath}${dir}`))) {
+    if (path.startsWith(ensureStartingSlash(`/${mdRoutePath}${dir}`))) {
       return sidebar[dir]
     }
     // return sidebar[dir]

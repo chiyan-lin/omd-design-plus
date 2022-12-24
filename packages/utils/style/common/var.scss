@@ -1,0 +1,10 @@
+/* 放一些公共的变量，方便后面的ui主题化 */
+/* 组件的颜色统一放在这个 css 里面 */
+@use 'sass:math';
+@use 'sass:map';
+
+@use '../mixins/function.scss' as *;
+
+:root {
+  @include set-css-var-value('button-color', 'red');
+}

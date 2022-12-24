@@ -1,0 +1,17 @@
+[
+  {
+    "text": "指北",
+    "link": "/guide/design",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "组件库",
+    "link": "/component/search-combination",
+    "activeMatch": "/component/"
+  },
+  {
+    "text": "主题",
+    "link": "/theme/index",
+    "activeMatch": "/theme/"
+  }
+]

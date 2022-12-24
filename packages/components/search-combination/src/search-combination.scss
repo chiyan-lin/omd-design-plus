@@ -1,0 +1,55 @@
+@use 'sass:math';
+@use 'sass:map';
+
+@use '../../../utils/style/mixins/mixins' as *;
+
+@include b(searchCombination) {
+  @include e(content) {
+    background: #fff;
+    padding: 20px 10px 0;
+    margin-bottom: 10px;
+  }
+  @include e(form) {
+    position: relative;
+    visibility: inherit;
+  }
+  @include e(button) {
+    line-height: 39px;
+  }
+  @include e(collapse) {
+    position: relative;
+    margin: 0 30px;
+    height: 24px;
+    &:hover {
+      @include m(line) {
+        border-bottom: solid 1px #c0e4f7;
+      }
+      @include m(text) {
+        color: #4babf9;
+      }
+    }
+  }
+  @include e(line) {
+    border-bottom: solid 1px #d6f0fd;
+    width: 100%;
+    bottom: 12px;
+    position: absolute;
+  }
+  @include e(text) {
+    position: absolute;
+    color:  #1890ff;
+    background: #fff;
+    display: inline-block;
+    left: 50%;
+    line-height: 24px;
+    .down {
+      transform: rotate(-90deg);
+    }
+    .up {
+      transform: rotate(90deg);
+    }
+  }
+  @include e(operations) {
+    height: 32px;
+  }
+}

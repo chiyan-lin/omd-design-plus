@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@omd-design-plus/eslint-config"]
+}

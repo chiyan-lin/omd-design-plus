@@ -1,0 +1,59 @@
+{
+  "intro": {
+    "text": "基础",
+    "children": [
+      {
+        "text": "设计",
+        "link": "/guide/design"
+      },
+      {
+        "text": "安装",
+        "link": "/guide/installation"
+      },
+      {
+        "text": "快速使用",
+        "link": "/guide/quickstart"
+      }
+    ]
+  },
+  "advanced": {
+    "text": "高级",
+    "children": [
+      {
+        "text": "主题",
+        "link": "/guide/theming"
+      },
+      {
+        "text": "暗黑模式",
+        "link": "/guide/dark-mode",
+        "promotion": "2.2.0"
+      },
+      {
+        "text": "自定义命名空间",
+        "link": "/guide/namespace",
+        "promotion": "2.2.0"
+      },
+      {
+        "text": "Changelog",
+        "link": "/guide/changelog"
+      }
+    ]
+  },
+  "development": {
+    "text": "开发",
+    "children": [
+      {
+        "text": "指南",
+        "link": "/guide/dev-guide"
+      },
+      {
+        "text": "FAQ",
+        "link": "/guide/dev-faq"
+      },
+      {
+        "text": "Commit 栗子",
+        "link": "/guide/commit-examples"
+      }
+    ]
+  }
+}

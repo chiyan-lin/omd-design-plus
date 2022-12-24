@@ -1,0 +1,20 @@
+{
+  "basic": {
+    "text": "基础组件",
+    "children": [
+      {
+        "link": "/component/search-combination",
+        "text": "SearchCombination"
+      }
+    ]
+  },
+  "hook": {
+    "text": "Hook",
+    "children": [
+      {
+        "link": "/component/hook",
+        "text": "hook钩子"
+      }
+    ]
+  }
+}

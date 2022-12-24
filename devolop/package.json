@@ -1,0 +1,21 @@
+{
+  "name": "@omd-design-plus/devolop",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45",
+    "ant-design-vue": "^3.2.13",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.4",
+    "unplugin-vue-components": "0.21.2",
+    "vite": "^2.9.15",
+    "vite-plugin-inspect": "^0.5.1",
+    "vite-plugin-mkcert": "^1.10.1"
+  }
+}

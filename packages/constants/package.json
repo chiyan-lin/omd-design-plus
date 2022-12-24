@@ -1,0 +1,6 @@
+{
+  "name": "@omd-design-plus/constants",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts"
+}

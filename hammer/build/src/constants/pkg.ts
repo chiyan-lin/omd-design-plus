@@ -1,0 +1,5 @@
+export const PKG_PREFIX = '@omd-design-plus'
+export const PKG_NAME = 'omd-design-plus'
+export const PKG_CAMELCASE_NAME = 'OmdDesignPlus'
+export const PKG_CAMELCASE_LOCAL_NAME = 'OmdDesignPlusLocale'
+export const PKG_BRAND_NAME = 'OMD Design Plus'

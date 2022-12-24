@@ -1,0 +1,6 @@
+# [TYPE](SCOPE): [component-name] DESCRIPTION
+# example: feat(components): [component] add type for form usage
+
+# https://www.conventionalcommits.org/en/v1.0.0/
+# TYPE: feat | fix | build | chore | ci | docs | style | refactor | perf | test
+# SCOPE: components | docs | hammer | scripts

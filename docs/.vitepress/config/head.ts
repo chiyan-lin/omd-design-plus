@@ -55,9 +55,9 @@ export const head: HeadConfig[] = [
     'script',
     {},
     `;(() => {
-      if (window.location.href.indexOf('/docs/') === -1) {
-        window.location.href = window.location.origin + '/omd-design-plus/docs/'
-      }
+      // if (window.location.href.indexOf('/docs/') === -1) {
+      //   window.location.href = window.location.origin + '/omd-design-plus/docs/'
+      // }
     })()`,
   ],
   ['script', {}, fs.readFileSync(path.resolve(vpRoot, 'lang.js'), 'utf-8')],

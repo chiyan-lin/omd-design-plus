@@ -1,6 +1,6 @@
 ---
 title: Local Development
-lang: zh-CN
+
 ---
 
 # Local Development

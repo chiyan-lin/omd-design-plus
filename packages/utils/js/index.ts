@@ -1,5 +1,3 @@
-export * from './animation'
-export * from './arrays'
 export * from './error'
 export * from './functions'
 export * from './objects'

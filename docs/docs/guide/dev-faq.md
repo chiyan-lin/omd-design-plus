@@ -1,6 +1,6 @@
 ---
 title: Development FAQ
-lang: zh-CN
+
 ---
 
 # Development FAQ

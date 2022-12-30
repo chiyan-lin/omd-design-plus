@@ -1,7 +1,6 @@
 import consola from 'consola'
 import { REPO_BRANCH, REPO_PATH } from '@omd-design-plus/build-const'
 import { docsDirName } from '@omd-design-plus/build-utils'
-// import { languages } from './utils/lang'
 import { features, head, mdPlugin, nav, sidebars } from './config'
 import type { UserConfig } from 'vitepress'
 

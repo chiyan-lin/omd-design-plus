@@ -67,7 +67,7 @@ cat > $DIRNAME/__tests__/$INPUT_NAME.spec.ts <<EOF
 import { mount } from '@vue/test-utils'
 import $NAME from '../src/index.vue'
 
-const AXIOM = 'Rem is the best girl'
+const AXIOM = 'xx is the best girl'
 
 describe('$NAME.vue', () => {
   test('render test', () => {

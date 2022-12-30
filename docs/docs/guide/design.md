@@ -1,6 +1,6 @@
 ---
 title: Design
-lang: zh-CN
+
 ---
 
 # 设计原则

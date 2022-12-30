@@ -16,25 +16,13 @@ defineProps<{
 defineEmits(['toggle'])
 
 const { theme, page } = useData()
-
-// const currentLink = computed(() => {
-//   if (!inBrowser) {
-//     return `/${page.value?.frontmatter?.lang || ''}/`
-//   }
-//   console.log('theme.value.langs,', theme.value.langs)
-//   const existLangIndex = theme.value.langs.findIndex((lang) =>
-//     window?.location?.pathname.startsWith(`/${lang}`)
-//   )
-
-//   return existLangIndex === -1 ? '/' : `/${theme.value.langs[existLangIndex]}/`
-// })
 </script>
 
 <template>
   <div class="navbar-wrapper">
     <div class="header-container">
       <div class="logo-container">
-        <a :href="currentLink">
+        <a href="/omd-design-plus/docs/">
           <img
             class="logo"
             src="/images/omd-design-plus-logo.png"

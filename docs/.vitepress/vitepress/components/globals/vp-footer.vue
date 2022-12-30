@@ -12,21 +12,21 @@ defineProps<{
     <div class="footer-main">
       <h4>链接</h4>
       <a
-        href="https://github.com/omd-design-plus/omd-design-plus"
+        href="https://github.com/chiyan-lin/omd-design-plus/"
         class="footer-main-link"
         target="_blank"
       >
         GitHub
       </a>
-      <a
+      <!-- <a
         href="https://github.com/omd-design-plus/omd-design-plus/releases"
         class="footer-main-link"
         target="_blank"
       >
         Changelog
-      </a>
+      </a> -->
       <a
-        href="https://element.eleme.io/"
+        href="https://chiyan-lin.github.io/omd-design-plus/docs/"
         class="footer-main-link"
         target="_blank"
       >
@@ -35,27 +35,27 @@ defineProps<{
     </div>
 
     <div class="footer-main">
-      <h4>链接</h4>
+      <h4>交流</h4>
       <a
-        href="https://github.com/omd-design-plus/omd-design-plus/issues"
+        href="https://github.com/chiyan-lin/omd-design-plus/issues"
         class="footer-main-link"
         target="_blank"
       >
         反馈
       </a>
       <a
-        href="https://github.com/omd-design-plus/omd-design-plus/blob/dev/.github/CONTRIBUTING.zh-CN.md"
+        href="https://github.com/chiyan-lin/omd-design-plus/CONTRIBUTE.md"
         class="footer-main-link"
         target="_blank"
       >
         贡献
       </a>
       <a
-        href="https://segmentfault.com/t/omd-design-plus"
+        href="https://github.com/chiyan-lin/Blog/issues/29"
         class="footer-main-link"
         target="_blank"
       >
-        segmentfault
+        过程
       </a>
     </div>
   </footer>

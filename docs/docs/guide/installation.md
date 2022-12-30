@@ -1,6 +1,6 @@
 ---
 title: Installation
-lang: zh-CN
+
 ---
 
 # 安装

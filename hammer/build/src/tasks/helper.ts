@@ -205,10 +205,10 @@ export const buildHelper: TaskFunction = (done) => {
     reWebTypesSource,
     reAttribute,
     reWebTypesType,
-    props: 'Attributes',
+    props: 'Props',
     propsOptions: 'Accepted Values',
     tableRegExp:
-      /#+\s+(.*\s*Attributes|.*\s*Events|.*\s*Slots|.*\s*Directives)\s*\n+(\|?.+\|.+)\n\|?\s*:?-+:?\s*\|.+((\n\|?.+\|.+)+)/g,
+      /#+\s+(.*\s*Props|.*\s*Events|.*\s*Slots|.*\s*Directives)\s*\n+(\|?.+\|.+)\n\|?\s*:?-+:?\s*\|.+((\n\|?.+\|.+)+)/g,
   })
 
   done()

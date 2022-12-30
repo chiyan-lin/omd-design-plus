@@ -6,30 +6,25 @@
       <li>
         <div class="card">
           <guide-svg w="40" m="y-12" />
-          <h3>UI引导</h3>
-          <p>
-            了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。
-          </p>
-          <a :href="`/${lang}/guide/design.html`">查看</a>
+          <h3>一致</h3>
+          <p>从用户出发: 遵循OMD用户习惯的语言和概念</p>
+          <!-- <a :href="`/${lang}/guide/design.html`">查看</a> -->
         </div>
       </li>
       <li>
         <div class="card">
           <component-svg w="40" m="y-12" />
-          <h3>组件</h3>
-          <p>
-            使用组件 Demo
-            快速体验交互细节；使用前端框架封装的代码帮助工程师快速开发。
-          </p>
-          <a :href="`/${lang}/component/layout.html`"> 查看 </a>
+          <h3>效率</h3>
+          <p>避免重复开发，项目快速接入使用，开箱即用</p>
+          <!-- <a :href="`/${lang}/component/layout.html`"> 查看 </a> -->
         </div>
       </li>
       <li>
         <div class="card">
           <resource-svg w="40" m="y-12" />
-          <h3>主题</h3>
-          <p>在线主题编辑器，可视化定制和管理站点主题、组件样式</p>
-          <a :href="`/${lang}/resource/index.html`"> 查看 </a>
+          <h3>在线调试</h3>
+          <p>可以直接在页面进行快速地组件试用</p>
+          <!-- <a :href="`/${lang}/resource/index.html`"> 查看 </a> -->
         </div>
       </li>
     </ul>
@@ -70,7 +65,7 @@
     }
   }
   .card {
-    height: 430px;
+    height: 360px;
     width: 100%;
     background: var(--bg-color);
     border: 1px solid var(--border-color);

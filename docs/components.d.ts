@@ -85,6 +85,7 @@ declare module '@vue/runtime-core' {
     VpSourceCode: typeof import('./.vitepress/vitepress/components/demo/vp-source-code.vue')['default']
     VpSubnav: typeof import('./.vitepress/vitepress/components/vp-subnav.vue')['default']
     VpSwitch: typeof import('./.vitepress/vitepress/components/common/vp-switch.vue')['default']
+    VpTableOfContent: typeof import('./.vitepress/vitepress/components/doc-content/vp-table-of-content.vue')['default']
     VpThemeToggler: typeof import('./.vitepress/vitepress/components/navbar/vp-theme-toggler.vue')['default']
   }
 }

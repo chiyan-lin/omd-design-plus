@@ -1,6 +1,6 @@
 ---
 title: 'Changelog'
-lang: zh-CN
+
 ---
 
 <style scoped lang="scss">

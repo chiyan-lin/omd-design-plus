@@ -1,10 +1,10 @@
 {
   "files": [],
   "references": [
-    { "path": "./tsconfig.web.json" },
-    { "path": "./tsconfig.devolop.json" },
-    { "path": "./tsconfig.node.json" },
-    { "path": "./tsconfig.vite-config.json" },
-    { "path": "./tsconfig.vitest.json" }
+    { "path": "./.tsconfig/tsconfig.web.json" },
+    { "path": "./.tsconfig/tsconfig.devolop.json" },
+    { "path": "./.tsconfig/tsconfig.node.json" },
+    { "path": "./.tsconfig/tsconfig.vite-config.json" },
+    { "path": "./.tsconfig/tsconfig.vitest.json" }
   ]
 }

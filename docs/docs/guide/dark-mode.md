@@ -1,6 +1,6 @@
 ---
 title: Dark Mode
-lang: zh-CN
+
 ---
 
 # Dark Mode<VersionTag version="2.2.0" />

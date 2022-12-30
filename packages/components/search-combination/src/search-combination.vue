@@ -96,7 +96,10 @@ import {
 import _ from 'lodash'
 import { DoubleLeftOutlined } from '@ant-design/icons-vue'
 import { useNamespace } from '@omd-design-plus/hooks'
-import { searchCombinationProps } from './search-combination'
+import {
+  searchCombinationProps,
+  searchCombinationEvents,
+} from './search-combination'
 
 export default defineComponent({
   name: 'OmdSearchCombination',
@@ -104,7 +107,7 @@ export default defineComponent({
     DoubleLeftOutlined,
   },
   props: searchCombinationProps,
-  emits: ['search', 'clearSearch', 'ready', 'change'],
+  emits: searchCombinationEvents,
   setup(props, { emit, slots }) {
     // 是否隐藏
     const hide = ref()

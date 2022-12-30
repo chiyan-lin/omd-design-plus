@@ -1,6 +1,6 @@
 ---
 title: 快速使用
-lang: zh-CN
+
 ---
 
 # 快速使用
@@ -133,7 +133,7 @@ export default defineConfig({
 
 :::warning
 
-如果您使用 `unplugin-element-plus` 并且只使用组件 API，您需要手动导入样式。
+如果您使用 `unplugin-` 并且只使用组件 API，您需要手动导入样式。
 
 栗子:
 

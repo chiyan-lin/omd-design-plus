@@ -1,6 +1,6 @@
 ---
 title: Theming
-lang: zh-CN
+
 ---
 
 # Custom theme

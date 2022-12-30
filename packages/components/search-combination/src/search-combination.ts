@@ -11,82 +11,93 @@ export interface SearchConditionsItem {
   on?: Function
 }
 
-export const searchCombinationProps = refactorProps({
-  /**
-   * @description 搜索项数组
-   */
+export const _searchCombinationProps = {
   searchConditions: {
+    description: '搜索项数组',
     type: Array as PropType<SearchConditionsItem[]>,
     required: true,
   },
-  /**
-   * @description  针对单个field处理
-   */
   valueRender: {
+    description: '针对单个field处理',
     type: Function,
   },
-  /**
-   * @description  针对所有field处理, 如果valueRender与paramsRender同时存在，以valueRender为准
-   */
   paramsRender: {
+    description:
+      '针对所有field处理, 如果valueRender与paramsRender同时存在，以valueRender为准',
     type: Function,
   },
-  /**
-   * @description  默认搜索项
-   */
   defaultSearch: {
+    description: '默认搜索项',
     type: Object,
     default: () => ({}),
   },
-  /**
-   * @description  是否展开
-   */
   collapse: {
+    description: '是否展开',
     type: Boolean,
     default: true,
   },
-  /**
-   * @description  隐藏模式下，展示的条数
-   */
   miniCount: {
+    description: ' 隐藏模式下，展示的条数',
     type: Number,
     default: 7,
   },
-  /**
-   * @description  每行显示几个条件
-   */
   rowCount: {
+    description: ' 每行显示几个条件',
     type: Number,
     default: 7,
   },
-  /**
-   * @description  是否立即搜索
-   */
   searchImediately: {
+    description: '是否立即搜索',
     type: Boolean,
     default: false,
   },
-  /**
-   * @description  隐藏模式下，展示的条数
-   */
   labelCol: {
+    description: 'ant labelCol 配置',
     type: Object,
     default: () => ({ span: 8 }),
   },
-  /**
-   * @description  隐藏模式下，展示的条数
-   */
   wrapperCol: {
+    description: 'ant wrapperCol 配置',
     type: Object,
     default: () => ({ span: 16 }),
   },
-
   // type: {
-  //   type: String,
-  //   values: ['primary', 'success', 'warning', 'info', 'danger'],
-  //   default: 'danger',
+  //   type: step,
+  //   values: ['1', '2', '3', '4', '5'],
+  //   default: '1',
   // },
-} as const)
+}
+
+export const _searchCombinationEvents = {
+  search: {
+    description: '点击搜索回调',
+    type: '(params: [searchConditions对应输入的值]) => void',
+  },
+  clearSearch: {
+    description: '点击清空回调',
+    type: '_ => void',
+  },
+  ready: {
+    description: '组件onMounted回调',
+    type: '_ => void',
+  },
+  change: {
+    description: '用户操作回调',
+    type: '(params: [searchConditions对应输入的值]) => void',
+  },
+}
+
+export const _searchCombinationSlots = {
+  'search-btns': {
+    description: '操作块',
+  },
+}
+
+export const searchCombinationEvents = Object.keys(_searchCombinationEvents)
+
+export const searchCombinationSlots = Object.keys(_searchCombinationSlots)
+
+export const searchCombinationProps = refactorProps(_searchCombinationProps)
 
 export type SearchCombinationProps = ExtractPropTypes<
   typeof searchCombinationProps

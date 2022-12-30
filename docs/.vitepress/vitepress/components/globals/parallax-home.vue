@@ -118,7 +118,7 @@ useEventListener(window, 'scroll', handleScroll)
         <p m="t-2">vue3版本的 OMD 设计组件库</p>
       </div>
     </div>
-    <div ref="jumbotronRef" class="jumbotron">
+    <!-- <div ref="jumbotronRef" class="jumbotron">
       <div class="parallax-container" :style="containerStyle">
         <div :style="cardStyle">
           <screen-svg :style="screenLayer" alt="banner" />
@@ -138,7 +138,7 @@ useEventListener(window, 'scroll', handleScroll)
       src="/images/theme-index-blue.png"
       alt="banner"
       class="mobile-banner"
-    />
+    /> -->
     <HomeCards />
   </div>
   <HomeFooter :is-home="true" />

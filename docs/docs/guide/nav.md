@@ -1,6 +1,6 @@
 ---
 title: Navigation
-lang: zh-CN
+
 ---
 
 <style>

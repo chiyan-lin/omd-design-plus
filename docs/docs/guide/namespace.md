@@ -1,6 +1,6 @@
 ---
 title: Custom Namespace
-lang: zh-CN
+
 ---
 
 ## Custom namespace<VersionTag version="2.2.0" />

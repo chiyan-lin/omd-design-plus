@@ -15,6 +15,7 @@ export const buildRoot = resolve(projRoot, 'hammer', 'build')
 export const docsDirName = 'docs'
 export const docRoot = resolve(projRoot, docsDirName)
 export const vpRoot = resolve(docRoot, '.vitepress')
+export const mdcRoot = resolve(docRoot, 'docs', 'component')
 
 /** `/dist` */
 export const buildOutput = resolve(projRoot, 'dist')

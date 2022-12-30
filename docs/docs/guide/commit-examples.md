@@ -1,6 +1,6 @@
 ---
 title: Commit Examples
-lang: zh-CN
+
 ---
 
 # Commit Examples

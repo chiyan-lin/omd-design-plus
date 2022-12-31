@@ -1,55 +1,51 @@
 ---
-title: Local Development
+title: 本地开发
 
 ---
 
-# Local Development
+# 本地开发
 
-## Bootstrap project
+## 启动项目
 
-With command
 
 ```shell
 pnpm i
 ```
 
-the project will install all dependencies.
+## 文档开发
 
-## Website preview
-
-With command
 
 ```shell
 pnpm docs:dev
 ```
 
-the project will launch website for you to preview all existing component.
+## 组件开发
 
-## Local development
-
-See [Local development guide](https://github.com/omd-design-plus/omd-design-plus/blob/dev/CONTRIBUTING.md)
-
-1. With command
+1. 新建组件
 
 ```shell
-pnpm dev
+gen xxx
 ```
+生成的组件地址在 `packages/components` 中
 
-will start the local development environment.
-
-2. Add your component into `play/src/App.vue`
+2. 在 `devolop/src/xxx.vue`
 
 > App.vue
 
 ```vue
 <template>
-  <ComponentYouAreDeveloping />
+  <xxx></xxx>
 </template>
 
 <script setup lang="ts">
-// make sure this component is registered in @omd-design-plus/components
-import { ComponentYouAreDeveloping } from '@omd-design-plus/components'
-</script>
-```
+import xxx from '../../packages/components/xxx/src/xxx.vue'
 
-Modify `App.vue` file per your needs to get things work.
+onMounted(() => {})
+</script>
+
+<style lang="scss">
+// 引入全部css
+@use '../../packages/components/xxx/src/xxx.scss';
+</style>
+
+```

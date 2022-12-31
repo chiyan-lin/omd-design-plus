@@ -67,4 +67,4 @@ $ pnpm install omd-design-plus
 </head>
 ```
 
-如果是通过包管理器安装，并希望配合打包工具使用，请阅读下一节: [快速上手](/docs/guide/quickstart).
+如果是通过包管理器安装，并希望配合打包工具使用，请阅读下一节: [快速使用](/docs/guide/quickstart).

@@ -1,41 +1,30 @@
 ---
-title: Development FAQ
+title: 开发 FAQ
 
 ---
 
-# Development FAQ
+# 开发 FAQ
 
-Here are the problems that are easy to encounter in development.
 
-## If you encounter dependency related issues
+## 遇到奇怪的问题，先去掉 node_modules
 
 ```shell
 rm -fr node_modules
 pnpm i
 ```
 
-## Link local dependencies
+## Link 本地依赖
 
 ```shell
-# get dist
+# 1 打包
 pnpm build
 cd dist/omd-design-plus
-# set cur omd-design-plus to global `node_modules`
-pnpm link --global
-# for esm we also need link omd-design-plus for dist
+# 设置 omd-design-plus 到全局的 `node_modules`
 pnpm link --global omd-design-plus
 
-# go to your project, link to `omd-design-plus`
-cd your-project
+# 跳转到工作项目, link `omd-design-plus`
+cd your-work-project
 pnpm link --global omd-design-plus
 ```
 
-> More info see [pnpm link](https://pnpm.io/cli/link).
-
-## Theme
-
-We should not write Chinese comments in scss files.
-
-It will generate warning `@charset "UTF-8";` in the header of css file when built with vite.
-
-> More info see [#3219](https://github.com/omd-design-plus/omd-design-plus/issues/3219).
+> 参见 [pnpm link](https://pnpm.io/cli/link).

@@ -1,1 +1,0 @@
-import{r as t,o as a,c as o,a as r}from"./app.5b21fdae.js";const p='{"title":"","description":"","frontmatter":{"page":true},"headers":[],"relativePath":"docs/resource/index.md","lastUpdated":1672406738000}',s={},l=Object.assign(s,{__name:"index",setup(c){return(n,_)=>{const e=t("Resource");return a(),o("div",null,[r(e)])}}});export{p as __pageData,l as default};

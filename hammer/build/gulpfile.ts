@@ -31,7 +31,6 @@ export const copyTypesDefinitions: TaskFunction = (done) => {
     withTaskName(`copyTypes:${module}`, () =>
       copy(src, buildConfig[module].output.path, { recursive: true })
     )
-
   return parallel(copyTypes('esm'), copyTypes('cjs'))(done)
 }
 
@@ -44,8 +43,8 @@ const _default: any = series(
     runTask('buildCss'),
     runTask('generateTypesDefinitions'),
     runTask('buildHelper')
-  )
-  // parallel(copyTypesDefinitions, copyFiles)
+  ),
+  parallel(copyTypesDefinitions, copyFiles)
 )
 
 export default _default

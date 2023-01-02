@@ -7,11 +7,11 @@
     "skipLibCheck": true
   },
   "include": [
-    "../hammer/**/*",
-    "../hammer/**/*.json",
-    "../scripts/**/*",
-    "../packages/omd-design-plus/version.ts",
-    "../packages/omd-design-plus/package.json"
+    "hammer/**/*",
+    "hammer/**/*.json",
+    "scripts/**/*",
+    "packages/omd-design-plus/version.ts",
+    "packages/omd-design-plus/package.json"
   ],
   "exclude": ["**/__tests__/**", "**/tests/**", "**/dist"]
 }

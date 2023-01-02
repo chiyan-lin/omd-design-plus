@@ -146,8 +146,8 @@ export default defineComponent({
       const num =
         realRowCount.value -
         ((hide.value
-          ? Math.min(showCount.value, props.searchConditions.length)
-          : props.searchConditions.length) %
+          ? Math.min(showCount.value, (props.searchConditions as any).length)
+          : (props.searchConditions as any).length) %
           realRowCount.value) -
         1
       return [...Array(num).keys()]
@@ -157,7 +157,7 @@ export default defineComponent({
       return props.searchImediately ? props.miniCount + 1 : props.miniCount
     })
     const showCollapse = computed(() => {
-      return props.searchConditions.length > props.miniCount
+      return (props.searchConditions as any).length > props.miniCount
     })
     // 是否显示搜索按钮
     const showBtnCol = computed(() => {

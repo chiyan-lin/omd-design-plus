@@ -1,18 +1,15 @@
 {
   "name": "omd-design-plus",
   "version": "0.0.0-dev.1",
-  "description": "A Component Library for Vue 3",
+  "description": "A Component Library for Vue 3 in OMD",
   "keywords": [
     "omd-design-plus",
-    "element",
     "component library",
-    "ui framework",
-    "ui",
     "vue"
   ],
-  "homepage": "https://omd-design-plus.org/",
+  "homepage": "https://chiyan-lin.github.io/omd-design-plus/docs/",
   "bugs": {
-    "url": "https://github.com/omd-design-plus/omd-design-plus/issues"
+    "url": "https://github.com/chiyan-lin/omd-design-plus/issues"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -36,7 +33,7 @@
   "jsdelivr": "dist/index.full.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omd-design-plus/omd-design-plus.git"
+    "url": "git+https://github.com/chiyan-lin/omd-design-plus.git"
   },
   "publishConfig": {
     "access": "public"

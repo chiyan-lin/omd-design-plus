@@ -31,15 +31,17 @@ const typeMap = {
   vue: ['Component', 'VNode', 'CSSProperties', 'StyleValue'],
 }
 
-const DOC_ENRTY = `${path.resolve(projRoot, 'docs/zh-CN/component')}/*.md`
+const DOC_ENRTY = `${path.resolve(projRoot, 'docs/docs/component')}/*/api.md`
 
 const reComponentName: ReComponentName = (title) =>
   `omd-${hyphenate(title).replace(/[ ]+/g, '-')}`
 
-const reDocUrl: ReDocUrl = (fileName, header) => {
-  const docs = 'https://omd-design-plus.org/zh-CN/component/'
+const reDocUrl: ReDocUrl = (fileName, header, path) => {
+  const docs = 'https://chiyan-lin.github.io/omd-design-plus/docs/component/'
   const _header = header ? header.replaceAll(/\s+/g, '-').toLowerCase() : ''
-  return `${docs}${fileName}.html${_header ? '#' : ''}${_header}`
+  return `${docs}${(path as string).split('/').slice(-2)[0]}.html${
+    _header ? '#' : ''
+  }${_header}`
 }
 
 const reWebTypesSource: ReWebTypesSource = (title) => {

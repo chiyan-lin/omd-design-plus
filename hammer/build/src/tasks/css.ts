@@ -12,7 +12,7 @@ import { compRoot, epOutput, epRoot } from '@omd-design-plus/build-utils'
 const distFolder = path.resolve(__dirname, 'dist')
 const distBundle = path.resolve(epOutput, 'style')
 
-function buildThemeChalk(scssPath: string) {
+function buildComponent() {
   const sass = gulpSass(dartSass)
   // const noElPrefixFile = /(index|base|display)/
   return src(path.resolve(compRoot, '*/src/*.scss'))
@@ -37,7 +37,7 @@ function buildThemeChalk(scssPath: string) {
     .pipe(dest(distBundle))
 }
 
-function buildAllChalk() {
+function buildAll() {
   const sass = gulpSass(dartSass)
   // const noElPrefixFile = /(index|base|display)/
   return src(path.resolve(epRoot, 'index.scss'))
@@ -60,42 +60,10 @@ function buildAllChalk() {
     .pipe(dest(distBundle))
 }
 
-/**
- * copy from packages/style/dist to dist/omd-design-plus/style
- */
-// export function copyThemeChalkBundle() {
-//   return src(path.resolve(__dirname, 'package.json')).pipe(dest(distBundle))
-// }
-
-/**
- * copy source file to packages
- */
-
 export function copyThemeChalkSource() {
   return src(path.resolve(__dirname, 'src/**')).pipe(
     dest(path.resolve(distBundle, 'src'))
   )
 }
 
-<<<<<<< HEAD
-export const buildCss = parallel(series(buildThemeChalk, buildAllChalk))
-=======
-async function buildFullCss(minify: boolean) {
-  const files = await glob(`**/*.scss`, {
-    cwd: path.resolve(compRoot),
-    absolute: true,
-  })
-  return Promise.all(
-    files.map(async (file) => {
-      buildThemeChalk(file)
-    })
-  )
-}
-
-export const build: any = parallel(
-  copyThemeChalkSource,
-  series(buildThemeChalk, copyThemeChalkBundle)
-)
-
-export default build
->>>>>>> be103d3da030120b498b1e6eb6a5e00a8ba46d7a
+export const buildCss = series(buildComponent, buildAll)

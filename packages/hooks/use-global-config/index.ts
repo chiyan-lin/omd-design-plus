@@ -6,7 +6,6 @@ import type { App, InjectionKey, Ref } from 'vue'
 
 // this is meant to fix global methods like `ElMessage(opts)`, this way we can inject current locale
 // into the component as default injection value.
-// refer to: https://github.com/omd-design-plus/omd-design-plus/issues/2610#issuecomment-887965266
 const globalConfig = ref<ConfigProviderContext>()
 
 // export type ConfigProviderContext = {

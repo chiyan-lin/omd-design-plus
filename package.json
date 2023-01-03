@@ -19,7 +19,6 @@
     "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
     "clean:dist": "rimraf dist",
     "build": "pnpm run -C hammer/build start",
-    "build:theme": "pnpm run -C packages/style build",
     "format": "prettier --write --cache .",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",

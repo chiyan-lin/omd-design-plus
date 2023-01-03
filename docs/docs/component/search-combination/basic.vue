@@ -1,7 +1,7 @@
 <template>
   <div>
     <omd-search-combination
-      :searchConditions="[
+      :search-conditions="[
         {
           is: 'a-input',
           label: '名字',
@@ -24,6 +24,6 @@
           value: 'age',
         },
       ]"
-    ></omd-search-combination>
+    />
   </div>
 </template>

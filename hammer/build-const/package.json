@@ -1,6 +1,6 @@
 {
   "name": "@omd-design-plus/build-const",
-  "version": "0.0.1",
+  "private": true,
   "description": "Build constants for OMD Design Plus",
   "keywords": [
     "omd-design-plus"

@@ -10,16 +10,16 @@
     "@docsearch/js": "^3.3.0",
     "@vue/shared": "^3.2.45",
     "@vueuse/core": "^9.6.0",
+    "ant-design-vue": "^3.2.13",
     "axios": "^0.27.2",
     "clipboard-copy": "^4.0.1",
+    "lodash": "^4.17.21",
     "markdown-it": "^13.0.1",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "omd-design-plus": "workspace:*",
     "prism-theme-vars": "^0.2.4",
-    "vue": "^3.2.45",
-    "ant-design-vue": "^3.2.13",
-    "lodash": "^4.17.21"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "@crowdin/cli": "^3.9.1",

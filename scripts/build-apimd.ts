@@ -1,8 +1,8 @@
 import fs from 'fs/promises'
 import path from 'path'
-import { compRoot, mdcRoot } from '@omd-design-plus/build-utils'
 import consola from 'consola'
 import chalk from 'chalk'
+import { compRoot, mdcRoot } from '@omd-design-plus/build-utils'
 
 const headerMap = {
   props: {
@@ -38,10 +38,10 @@ const headerMap = {
 type BuildType = 'props' | 'events' | 'slots'
 
 function genTable(type: BuildType, source: any) {
-  let tableH = headerMap[type].header
+  const tableH = headerMap[type].header
   const res = [tableH]
-  let tableC = headerMap[type].cont
-  for (let item in source) {
+  const tableC = headerMap[type].cont
+  for (const item in source) {
     const name = item
     const config = source[item]
     res.push(tableC(name, config))
@@ -50,15 +50,13 @@ function genTable(type: BuildType, source: any) {
 }
 
 async function main() {
-  const threshold = process.env.THRESHOLD || 40
   const componentName = process.argv[2]
   if (!componentName) return console.error('输入组件名称再操作')
-  let output: string
   const diffOutput = require(path.resolve(
     compRoot,
     componentName,
     'src',
-    componentName + '.ts'
+    `${componentName}.ts`
   ))
   const prefix = componentName.replace(/\-(\w)/, ($0, $1) => $1.toUpperCase())
   const propsText = genTable('props', diffOutput[`_${prefix}Props`])

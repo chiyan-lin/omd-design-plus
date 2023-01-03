@@ -8,7 +8,6 @@ import esbuild from 'rollup-plugin-esbuild'
 import glob from 'fast-glob'
 import { epRoot, excludeFiles, pkgRoot } from '@omd-design-plus/build-utils'
 import { generateExternal, writeBundles } from '../utils'
-// import { OmdDesignPlusAlias } from '../plugins/omd-design-plus-alias'
 import { buildConfigEntries, target } from '../build-info'
 
 import type { OutputOptions } from 'rollup'
@@ -24,7 +23,6 @@ export const buildModules = async () => {
   const bundle = await rollup({
     input,
     plugins: [
-      // OmdDesignPlusAlias(),
       VueMacros({
         setupComponent: false,
         setupSFC: false,

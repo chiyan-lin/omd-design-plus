@@ -1,6 +1,6 @@
 {
   "name": "@omd-design-plus/eslint-config",
-  "version": "0.0.1",
+  "private": true,
   "description": "ESLint Config",
   "license": "MIT",
   "files": [

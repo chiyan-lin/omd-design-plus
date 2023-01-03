@@ -1,6 +1,5 @@
 {
   "name": "@omd-design-plus/build",
-  "version": "0.0.1",
   "private": true,
   "description": "Build Toolchain for OMD Design Plus",
   "main": "./dist/index.cjs",

@@ -11,9 +11,5 @@ cd dist/omd-design-plus
 npm publish
 cd -
 
-cd hammer/eslint-config
-npm publish
-cd -
-
 
 echo "✅ Publish completed"

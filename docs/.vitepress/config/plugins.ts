@@ -58,12 +58,12 @@ export const mdPlugin = (md: MarkdownIt) => {
       }
     },
   } as ContainerOpts)
+
   md.use(mdContainer, 'api', {
     validate(params) {
       return !!params.trim().match(/^api*(.*)$/)
     },
     render(tokens, idx) {
-      const m = tokens[idx].info.trim().match(/^api\s*(.*)$/)
       if (tokens[idx].nesting === 1 /* means the tag is opening */) {
         const apiMd = MarkdownIt()
         tableWrapper(apiMd)
@@ -86,5 +86,4 @@ export const mdPlugin = (md: MarkdownIt) => {
       }
     },
   } as ContainerOpts)
-  // md.use(ApiTableContainer)
 }

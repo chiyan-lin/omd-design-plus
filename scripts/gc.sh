@@ -32,7 +32,7 @@ mkdir -p "$DIRNAME"
 mkdir -p "$DIRNAME/src"
 mkdir -p "$DIRNAME/__tests__"
 
-cat > $DIRNAME/src/index.vue <<EOF
+cat > $DIRNAME/src/$DIRNAME.vue <<EOF
 <template>
   <div>
     <slot></slot>
@@ -52,7 +52,7 @@ export default defineComponent({
 </style>
 EOF
 
-cat <<EOF >"$DIRNAME/index.ts"
+cat <<EOF >"$DIRNAME/$DIRNAME.ts"
 import { App } from 'vue'
 import ${NAME} from './src/index.vue'
 

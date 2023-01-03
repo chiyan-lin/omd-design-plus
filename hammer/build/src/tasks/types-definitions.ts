@@ -22,7 +22,7 @@ const outDir = path.resolve(buildOutput, 'types')
 /**
  * fork = require( https://github.com/egoist/vue-dts-gen/blob/main/src/index.ts
  */
-export const generateTypesDefinitions = async () => {
+export const buildTypesDefinitions = async () => {
   const compilerOptions: CompilerOptions = {
     emitDeclarationOnly: true,
     outDir,

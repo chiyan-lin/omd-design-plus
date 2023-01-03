@@ -1,6 +1,5 @@
 {
   "name": "@omd-design-plus/build-utils",
-  "version": "0.0.1",
   "private": true,
   "description": "Build utils for OMD Design Plus",
   "keywords": [

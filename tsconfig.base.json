@@ -16,7 +16,7 @@
     "rootDir": ".",
     "types": [],
     "paths": {
-      "@omd-design-plus/*": ["../packages/*"]
+      "@omd-design-plus/*": ["packages/*"]
     }
   }
 }

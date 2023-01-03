@@ -1,7 +1,6 @@
 {
   "name": "@omd-design-plus/components",
-  "version": "0.0.5",
-  "description": "all components are settled here",
+  "private": true,
   "main": "index.ts",
   "module": "index.ts",
   "unpkg": "index.js",
